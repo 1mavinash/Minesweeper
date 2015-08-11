@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minesweeper</string>
+
+    <string name="game_winner">Congratulations. You won!</string>
+    <string name="game_loser">Sorry you lost!</string>
+    <string name="validate">Validate</string>
+    <string name="cheat">Cheat</string>
+
+    <string name="game_exit">Exit</string>
+    <string name="game_new">New Game</string>
+    <string name="complete_game">Finish the game to complete</string>
+</resources>
