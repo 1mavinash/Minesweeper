@@ -1,9 +1,5 @@
 package com.avinash.minesweeper.model;
 
-import android.content.Context;
-
-import com.avinash.minesweeper.R;
-
 import java.util.Random;
 
 /**
