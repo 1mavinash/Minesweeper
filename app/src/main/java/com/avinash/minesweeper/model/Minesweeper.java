@@ -36,8 +36,13 @@ public class Minesweeper {
     private void updateSurroundingCells() {
         for (int row = 0; row < BOARD_SIZE; row++) {
             for (int col = 0; col < BOARD_SIZE; col++) {
-                for (int rowIdx = row - 1; rowIdx <= row + 1; rowIdx++) {
-                    for (int colIdx = col - 1; colIdx <= col + 1; colIdx++) {
+                int prevRow = row - 1;
+                int nextRow = row + 1;
+                int prevCol = col - 1;
+                int nextCol = col + 1;
+
+                for (int rowIdx = prevRow; rowIdx <= nextRow; rowIdx++) {
+                    for (int colIdx = prevCol; colIdx <= nextCol; colIdx++) {
                         if (isInsideBoard(rowIdx, colIdx) && mMines[rowIdx][colIdx]) {
                             mCells[row][col]++;
                         }
